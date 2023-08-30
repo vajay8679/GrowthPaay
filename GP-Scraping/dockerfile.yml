@@ -1,0 +1,10 @@
+FROM python:3.8
+
+RUN pip3 install -r requirements.txt
+RUN pip3 install git+https://github.com/GrowthPaay/GP-ScrapingPackage.git
+
+# import below function inside main.py
+
+# from growthpaayscraping.aws_config_profile.utils_aws_s3 import push_parquet_file_to_S3_bucket
+# from growthpaayscraping.utils.utils_json import convert_to_json_file
+# from growthpaayscraping.utils.utils_parquet import convert_json_to_parquet_file
